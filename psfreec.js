@@ -1,7 +1,7 @@
-import { Int, KB, MB } from '/offset.js';
-import { die, DieError, debug_log, clear_log, sleep, hex, hex_np, align, BufferView, Memory, mem, } from '/utils.js';
-import * as config from '/config.js';
-import * as off from '/offset.js';
+import { Int, KB, MB } from './offset.mjs';
+import { die, DieError, debug_log, clear_log, sleep, hex, hex_np, align, BufferView, Memory, mem, } from './utils.mjs';
+import * as config from './config.mjs';
+import * as off from './offset.mjs';
 addEventListener('unhandledrejection', event => {
     const reason = event.reason;
     alert(
